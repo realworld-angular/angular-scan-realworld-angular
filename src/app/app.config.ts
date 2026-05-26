@@ -5,6 +5,7 @@ import { routes } from './app.routes';
 import { credentialsInterceptor } from './core/interceptors/credentials.interceptor';
 import { Auth } from './core/services/auth';
 import { baseUrlInterceptor } from './core/interceptors/base-url.interceptor';
+import { provideAngularScan } from 'angular-scan';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -19,5 +20,6 @@ export const appConfig: ApplicationConfig = {
     ),
     provideHttpClient(withInterceptors([baseUrlInterceptor, credentialsInterceptor]), withFetch()),
     provideAppInitializer(() => inject(Auth).init()),
+    provideAngularScan(),
   ],
 };

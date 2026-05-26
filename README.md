@@ -6,6 +6,12 @@ The frontend single-page application for Realworld Angular, built with [Angular 
 
 Customers can browse pizzerias, build their cart, place orders, and track their delivery. Pizzeria admins and kitchen staff have a dedicated admin panel to manage menus, orders, and staff.
 
+## Implementation
+
+This project is a fork of the [RealWorld Angular](https://github.com/realworld-angular/realworld-angular) project, with the following changes:
+
+- [Angular Scan](https://github.com/husseinAbdElaziz/angular-scan) to get visual highlight of Angular component rendering in the browser.
+
 ## Table of Contents
 
 - [Overview](#overview)
