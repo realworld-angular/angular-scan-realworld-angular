@@ -3,4 +3,10 @@ allowBuilds:
   esbuild: true
   lmdb: true
   msgpackr-extract: true
-minimumReleaseAge: 0
+minimumReleaseAgeExclude:
+  - '@angular-devkit/*'
+  - '@angular/*'
+  - '@ngtools/webpack'
+  - '@schematics/*'
+  - 'ng-packagr'
+  - 'zone.js'
